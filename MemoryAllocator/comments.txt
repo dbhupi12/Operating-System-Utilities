@@ -1,0 +1,10 @@
+3 first-fit
+
+my_heapinfo()-
+I have maintained a linked list of free chunks
+and in my_heapinfo() I am iterating over the linked list and calculating the total free size
+And by comparing, calculating smallest and largest free chunks too in the same loop
+then to calculate current size I subtracted free size from Max size and for number of alloacted
+blocks, I have already created a variable intially and mainting count of allocatated blocks by the
+the same variable (n_blocks++ in my_alloc() and n_blocks-- in my_free())
+and during spliting of chunks I am assigning the first part to the my_alloc() and keep the later part as free.
